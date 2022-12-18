@@ -1,0 +1,17 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: setup
+  namespace: argocd
+spec:
+  project: default
+  source:
+    repoURL: http://git.shriker.de/shriker/k3s-cluster.git
+    targetRevision: master
+    path: apps
+  destination:
+    server: https://kubernetes.default.svc
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
