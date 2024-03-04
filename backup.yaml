@@ -1,9 +1,9 @@
 apiVersion: velero.io/v1
 kind: Backup
 metadata:
-  name: test-backup2
-  annotations:
-    velero.io/csi-volumesnapshot-class_driver.longhorn.io: "longhorn"
+  name: test-backup5
 spec:
-    includedNamespaces:
+  includedNamespaces:
     - mysql
+  volumeSnapshotLocations:
+    - csi
