@@ -6,7 +6,7 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: http://git.shriker.de/shriker/k3s-cluster.git
+    repoURL: https://github.com/shriker95/kubernetes.git
     targetRevision: master
     path: apps
   destination:
