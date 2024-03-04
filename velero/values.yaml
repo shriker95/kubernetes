@@ -340,7 +340,7 @@ configuration:
     accessMode: ReadWrite
     credential:
       # name of the secret used by this backupStorageLocation.
-      name: minio-creds
+      name: mini-creds
       # name of key that contains the secret data to be used.
       key: data
     # Additional provider-specific configuration. See link above

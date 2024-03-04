@@ -1,0 +1,9 @@
+apiVersion: velero.io/v1
+kind: Backup
+metadata:
+  name: test-backup
+  annotations:
+    velero.io/csi-volumesnapshot-class_disk.csi.cloud.com: "longhorn"
+spec:
+    includedNamespaces:
+    - mysql
