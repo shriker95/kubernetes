@@ -1,9 +1,7 @@
 apiVersion: velero.io/v1
 kind: Backup
 metadata:
-  name: test-backup5
+  name: test-backup
 spec:
   includedNamespaces:
     - mysql
-  volumeSnapshotLocations:
-    - csi
