@@ -5,3 +5,5 @@ metadata:
   namespace: kube-system
 driver: driver.longhorn.io
 deletionPolicy: Delete
+parameters:
+  type: snap
