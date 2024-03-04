@@ -8,13 +8,13 @@ spec:
     - websecure
   routes:
     - kind: Rule
-      match: Host(`argocd.shriker.dev`)
+      match: Host(`longhorn.shriker.dev`)
       priority: 10
       services:
         - name: longhorn-frontend
           port: 80
     - kind: Rule
-      match: Host(`argocd.shriker.dev`) && Headers(`Content-Type`, `application/grpc`)
+      match: Host(`longhorn.shriker.dev`) && Headers(`Content-Type`, `application/grpc`)
       priority: 11
       services:
         - name: longhorn-frontend
