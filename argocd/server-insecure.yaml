@@ -1,12 +1,6 @@
-apiVersion: apps/v1
-kind: Deployment
+apiVersion: v1
+kind: ConfigMap
 metadata:
-  name: argocd-server
-spec:
-  template:
-    spec:
-      containers:
-        - command:
-            - argocd-server
-            - --insecure
-          name: argocd-server
+  name: argocd-cmd-params-cm
+data:
+  server.insecure: "true"
