@@ -1,17 +1,17 @@
-#apiVersion: argoproj.io/v1alpha1
-#kind: Application
-#metadata:
-#  name: namespaces
-#  namespace: argocd
-#spec:
-#  project: default
-#  source:
-#    repoURL: https://github.com/shriker95/kubernetes.git
-#    targetRevision: master
-#    path: namespaces
-#  destination:
-#    server: https://kubernetes.default.svc
-#  syncPolicy:
-#    automated:
-#      prune: true
-#      selfHeal: true
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: namespaces
+  namespace: argocd
+spec:
+  project: default
+  source:
+    repoURL: https://github.com/shriker95/kubernetes.git
+    targetRevision: HEAD
+    path: namespaces
+  destination:
+    server: https://kubernetes.default.svc
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
