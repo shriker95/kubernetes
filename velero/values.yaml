@@ -348,7 +348,7 @@ configuration:
     config:
       region: minio
       s3ForcePathStyle: "true"
-      s3Url: "http://minio.minio.svc:9001"
+      s3Url: "http://minio.minio.svc:9000"
     #  kmsKeyId:
     #  resourceGroup:
     #  The ID of the subscription containing the storage account, if different from the cluster’s subscription. (Azure only)
